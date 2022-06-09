@@ -5,7 +5,7 @@ pipeline {
 			stages {
 				stage('Source'){
 					steps{
-						checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '1234567890', url: 'http://192.168.0.100/']]])
+						checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '1234567890', url: 'https://github.com/vino19941995/ConsoleApp2.git']]])
 					}
 				}
 				stage('Build') {
